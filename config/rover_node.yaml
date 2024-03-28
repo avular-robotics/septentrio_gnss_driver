@@ -104,7 +104,7 @@ septentrio_gnss_driver:
 
     publish:
       # For both GNSS and INS Rxs
-      navsatfix: false
+      navsatfix: true
       gpsfix: true
       gpgga: false
       gprmc: false
@@ -120,7 +120,7 @@ septentrio_gnss_driver:
       velcovgeodetic: true
       atteuler: true
       attcoveuler: true
-      pose: false
+      pose: true
       twist: false
       diagnostics: false
       aimplusstatus: true
