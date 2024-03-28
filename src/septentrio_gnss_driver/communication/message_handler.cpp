@@ -210,7 +210,7 @@ namespace io {
             msg.pose.covariance[34] = deg2radSq(last_attcoveuler_.cov_headpitch);
             msg.pose.covariance[35] = deg2radSq(last_attcoveuler_.cov_headhead);
         }
-        publish<PoseWithCovarianceStampedMsg>("pose", msg);
+        publish<PoseWithCovarianceStampedMsg>("/autopilot/gnss_heading", msg);
     };
 
     void MessageHandler::assembleDiagnosticArray(
