@@ -1563,7 +1563,7 @@ namespace io {
             msg.position_covariance_type =
                 NavSatFixMsg::COVARIANCE_TYPE_DIAGONAL_KNOWN;
         }
-        publish<NavSatFixMsg>("navsatfix", msg);
+        publish<NavSatFixMsg>("/robot/gnss/fix", msg);
     };
 
     /**
