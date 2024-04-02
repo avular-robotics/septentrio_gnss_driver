@@ -96,10 +96,10 @@ septentrio_gnss_driver:
         send_gga: "auto"
         keep_open: true
       serial_1:
-        port: ""
+        port: "USB1"
         baud_rate: 115200
-        rtk_standard: "auto"
-        send_gga: "auto"
+        rtk_standard: "RTCMv3"
+        send_gga: "sec1"
         keep_open: true
 
     publish:
