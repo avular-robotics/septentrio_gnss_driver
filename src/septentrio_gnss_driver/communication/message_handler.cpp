@@ -1458,13 +1458,13 @@ namespace io {
             msg.longitude = rad2deg(last_pvtgeodetic_.longitude);
             msg.altitude = last_pvtgeodetic_.height;
             msg.position_covariance[0] = last_poscovgeodetic_.cov_lonlon;
-            msg.position_covariance[1] = last_poscovgeodetic_.cov_latlon;
-            msg.position_covariance[2] = last_poscovgeodetic_.cov_lonhgt;
-            msg.position_covariance[3] = last_poscovgeodetic_.cov_latlon;
+            msg.position_covariance[1] = 0.0;
+            msg.position_covariance[2] = 0.0;
+            msg.position_covariance[3] = 0.0;
             msg.position_covariance[4] = last_poscovgeodetic_.cov_latlat;
-            msg.position_covariance[5] = last_poscovgeodetic_.cov_lathgt;
-            msg.position_covariance[6] = last_poscovgeodetic_.cov_lonhgt;
-            msg.position_covariance[7] = last_poscovgeodetic_.cov_lathgt;
+            msg.position_covariance[5] = 0.0;
+            msg.position_covariance[6] = 0.0;
+            msg.position_covariance[7] = 0.0;
             msg.position_covariance[8] = last_poscovgeodetic_.cov_hgthgt;
             msg.position_covariance_type = NavSatFixMsg::COVARIANCE_TYPE_KNOWN;
         } else if (settings_->septentrio_receiver_type == "ins")
