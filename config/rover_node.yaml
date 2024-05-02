@@ -25,7 +25,7 @@ septentrio_gnss_driver:
       ntp_server: ""
       keep_open: true
 
-    frame_id: gnss
+    frame_id: map
 
     imu_frame_id: imu
 
